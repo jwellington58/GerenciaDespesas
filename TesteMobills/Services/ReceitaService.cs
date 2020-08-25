@@ -35,5 +35,19 @@ namespace TesteMobills.Services
         {
             this._repository.Update(entity, id);
         }
+
+        public double Somatorio()
+        {
+            var receitas = this._repository.GetAll();
+            double soma = 0;
+            foreach (Receita receita in receitas)
+            {
+                if (receita.Recebido)
+                {
+                    soma += receita.Valor;
+                }
+            }
+            return soma;
+        }
     }
 }

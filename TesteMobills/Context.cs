@@ -10,17 +10,17 @@ namespace TesteMobills.Models
     {
         public Context(DbContextOptions<Context> options) : base(options) { }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
+        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        //{
            
 
-            string connection = "Server=localhost; Database=TesteMobills; User Id=sa; Password=root;";
+        //    string connection = "Server=localhost; Database=TesteMobills; User Id=sa; Password=root;";
 
-            if (!optionsBuilder.IsConfigured)
-            {
-                optionsBuilder.UseSqlServer(connection);
-            }
-        }
+        //    if (!optionsBuilder.IsConfigured)
+        //    {
+        //        optionsBuilder.UseSqlServer(connection);
+        //    }
+        //}
 
         public virtual DbSet<Despesa> Despesa {get;set;}
         public virtual DbSet<Receita> Receita { get; set; }

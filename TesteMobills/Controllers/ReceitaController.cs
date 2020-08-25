@@ -74,5 +74,11 @@ namespace TesteMobills.Controllers
             _service.Delete(id);
             return Ok();
         }
+
+        [HttpGet("soma")]
+        public IActionResult Soma()
+        {
+            return Ok(this._service.Somatorio());
+        }
     }
 }

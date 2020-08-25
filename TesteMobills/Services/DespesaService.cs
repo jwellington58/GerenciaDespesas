@@ -35,5 +35,19 @@ namespace TesteMobills.Services
         {
             this._repository.Update(entity, id);
         }
+
+        public double Somatorio()
+        {
+            var despesas = this._repository.GetAll();
+            double soma = 0;
+            foreach(Despesa despesa in despesas)
+            {
+                if(despesa.Pago)
+                {
+                    soma += despesa.Valor;
+                }
+            }
+            return soma;
+        }
     }
 }
