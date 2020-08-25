@@ -11,10 +11,10 @@ namespace TesteMobills.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ReceitaController : ControllerBase
+    public class ReceitasController : ControllerBase
     {
         public ReceitaService _service;
-        public ReceitaController(Context context)
+        public ReceitasController(Context context)
         {
             _service = new ReceitaService(context);
         }
