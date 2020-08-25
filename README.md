@@ -1,5 +1,9 @@
 # GerenciaDespesas
 A simple dotnet project for expense management.
+## Estrutura do Projeto
+  - Foi usado um padrão com Models e Controllers, para haver uma maior abstração de informações.
+  - Foi adotado um padrão de Repository, para abstrair os acesso aos dados. 
+  - Foi adotado um padrão de Services, para prover os serviços necessários para aplicação e abstrair as regras de negócio.
 ## Tecnologias usadas
   - .net core 3.1 (https://dotnet.microsoft.com/download/dotnet-core/3.1)
   - sql server 17.3 (https://sqlserverbuilds.blogspot.com/2018/01/sql-server-management-studio-ssms.html)
