@@ -23,5 +23,6 @@ namespace TesteMobills.Models
         }
 
         public virtual DbSet<Despesa> Despesa {get;set;}
+        public virtual DbSet<Receita> Receita { get; set; }
     }
 }
